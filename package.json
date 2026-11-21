@@ -1,0 +1,31 @@
+{
+  "name": "webp-viewer",
+  "displayName": "WebP Viewer",
+  "description": "View .webp images inside VS Code: fit to window, 100% view, Ctrl+Scroll zoom, and image size info.",
+  "version": "0.0.1",
+  "publisher": "kislay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kislay-kant-pandey/WebP-Viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kislay-kant-pandey/WebP-Viewer/issues"
+  },
+  "homepage": "https://github.com/kislay-kant-pandey/WebP-Viewer#readme",
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Visualization", "Other"],
+  "keywords": ["webp", "image", "viewer", "preview", "picture"],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "webpViewer.preview",
+        "displayName": "WebP Viewer",
+        "selector": [{ "filenamePattern": "*.webp" }],
+        "priority": "default"
+      }
+    ]
+  }
+}
